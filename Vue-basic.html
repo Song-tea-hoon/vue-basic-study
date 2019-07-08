@@ -9,7 +9,7 @@
 </head>
 <body>
   <div id="app"
-    class="myClass"
+    v-bind:class="myClass"
   >
     {{ message }}
   </div>
@@ -24,6 +24,10 @@
     /*
     선언적 랜더링은 데이터 값에 의해 화면(HTML)이 변화 하는 것입니다
     브라우저 콘솔창에 app.message = "안녕하세요" 라고 치면 화면이 변하는것을 보실 수 있습니다.
+    다른 값으로 테스트를 해보세요
+
+    v-bind를 사용하면 class, title과 같이 html태그 속성값들을 vue data의 값으로 치횐할 수 있습니다. 
+    브라우저 콘솔창에 app.myClass = "another-class-name" 라고 치면 class가 변하는것을 볼수 있습니다.
     다른 값으로 테스트를 해보세요
     */
   </script>
