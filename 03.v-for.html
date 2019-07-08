@@ -61,7 +61,16 @@
 
   <script>
     const app = new Vue({
-      el:'#app'
+      el:'#app',
+      data: {
+        todoList: [
+          {id:0, text:'밥먹기', done: true},
+          {id:1, text:'빨래하기', done: false},
+          {id:2, text:'술먹기', done: false},
+          {id:3, text:'노래하기', done: true},
+          {id:3, text:'운동하기', done: false}
+        ]
+      }
     })
   </script>
 </body>
