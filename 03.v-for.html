@@ -38,6 +38,20 @@
     for(const i of forofArr ){
       console.log('for of : ', i ); // <- i에 인덱스 값이 아닌 value값이 출력 됩니다.(for in 과의 차이점..)
     }
+
+    // 4. for of를 통한 배열 순환 및 객체데이터 접근
+    let todoList = [
+      {id:0, text:'밥먹기', done: true},
+      {id:1, text:'빨래하기', done: false},
+      {id:2, text:'술먹기', done: false},
+      {id:3, text:'노래하기', done: true},
+      {id:3, text:'운동하기', done: false}
+    ];
+
+    for(const item of todoList ){
+      console.log(item.id, item.text, item.done); // 각각의 value값이 객체형태 이므로 .연산자로 속성에 접근이 가능합니다.
+    }
   </script>
+  
 </body>
 </html>
