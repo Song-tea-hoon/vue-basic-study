@@ -56,7 +56,7 @@
   <div id="app">
     <ol>
       <li v-for="item in todoList">
-        <input type="checkbox">
+        <input type="checkbox" v-bind:checked="item.done">
         {{item.text}}
       </li>
     </ol>
@@ -76,5 +76,6 @@
       }
     })
   </script>
+  
 </body>
 </html>
