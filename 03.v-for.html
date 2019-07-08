@@ -55,7 +55,10 @@
 
   <div id="app">
     <ol>
-      <li v-for="item in todoList">{{item.text}}</li>
+      <li v-for="item in todoList">
+        <input type="checkbox">
+        {{item.text}}
+      </li>
     </ol>
   </div>
 
