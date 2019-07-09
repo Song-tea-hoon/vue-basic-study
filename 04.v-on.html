@@ -22,6 +22,9 @@
         methods: {
           onClick() {
             alert('클릭 되었습니다!');
+          },
+          reverseMessage: function () {
+            this.message = this.message.split('').reverse().join('')
           }
         }
       })
