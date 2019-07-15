@@ -12,6 +12,7 @@
       <ul>
         <my-component
           v-for="item in todoList"
+          v-bind:item-data="item"
         ></my-component>
       </ul>
   </div>
