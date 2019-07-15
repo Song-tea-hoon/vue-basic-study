@@ -17,7 +17,15 @@
     });
 
     const app = new Vue({
-      el: '#app'
+      el: '#app',
+      data: {
+        todoList: [
+          {text: '밥먹기', done:true},
+          {text: '공부하기', done:true},
+          {text: '빨래하기', done:false},
+          {text: '집에가기', done:false}
+        ]
+      }
     })
   </script>
 </body>
