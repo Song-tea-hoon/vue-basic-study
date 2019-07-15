@@ -18,7 +18,7 @@
   </div>
   <script>
     Vue.component('my-component', {
-      template: `<li>하위 컴포넌트 입니다.</li>`,
+      template: `<li>{{itemData.text}}</li>`,
       props:['itemData']
     });
 
