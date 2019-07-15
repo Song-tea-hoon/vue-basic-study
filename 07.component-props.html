@@ -9,7 +9,7 @@
 </head>
 <body>
   <div id="app">
-      <my-component></my-component>
+      <my-component v-bind:parent-message="message"></my-component>
   </div>
   <script>
     Vue.component('my-component', {
