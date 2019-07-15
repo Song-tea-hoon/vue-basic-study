@@ -18,7 +18,10 @@
   </div>
   <script>
     Vue.component('my-component', {
-      template: `<li>{{itemData.text}}</li>`,
+      template: `<li>
+                    {{itemData.text}}
+                    <input type="checkbox" v-bind:checked="itemData.done">
+                </li>`,
       props:['itemData']
     });
 
